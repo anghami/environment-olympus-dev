@@ -56,17 +56,17 @@ repository: nexus
 secretStorage: local
 storage:
   backup:
-    enabled: false
-    url: ""
+    enabled: true
+    url: s3://anghami.jx/olympus/backup
   logs:
-    enabled: false
-    url: ""
+    enabled: true
+    url: s3://anghami.jx/olympus/logs
   reports:
-    enabled: false
-    url: ""
+    enabled: true
+    url: s3://anghami.jx/olympus/reports
   repository:
-    enabled: false
-    url: ""
+    enabled: true
+    url: s3://anghami.jx/olympus/repo
 terraform: true
 vault: {}
 velero: {}
