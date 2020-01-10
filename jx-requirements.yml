@@ -1,6 +1,6 @@
 autoUpdate:
-  enabled: false
-  schedule: ""
+  enabled: true
+  schedule: 0 0 4 1/1 * ? *
 bootConfigURL: https://github.com/anghami/environment-olympus-dev
 cluster:
   clusterName: olympus
@@ -69,7 +69,8 @@ storage:
     url: s3://anghami.jx/olympus/repo
 terraform: true
 vault: {}
-velero: {}
+velero:
+  namespace: velero
 versionStream:
   ref: v1.0.293
   url: https://github.com/jenkins-x/jenkins-x-versions.git
