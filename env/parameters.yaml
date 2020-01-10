@@ -1,0 +1,10 @@
+adminUser:
+  password: local:olympus/adminUser:password
+  username: admin
+enableDocker: false
+pipelineUser:
+  email: jx@anghami.com
+  token: local:olympus/pipelineUser:token
+  username: jx-anghami
+prow:
+  hmacToken: local:olympus/prow:hmacToken
